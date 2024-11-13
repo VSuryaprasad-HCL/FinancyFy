@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Budget List</h2>
+<table>
+    <tr>
+        <th>Category</th>
+        <th>Amount</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+    </tr>
+    {% for budget in budgets %}
+    <tr>
+        <td>{{ budget.category.name }}</td>
+        <td>{{ budget.amount }}</td>
+        <td>{{ budget.start_date }}</td>
+        <td>{{ budget.end_date }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

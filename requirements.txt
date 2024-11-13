@@ -1,0 +1,17 @@
+# Core Django framework
+Django>=4.0,<5.0
+
+# PostgreSQL database adapter
+psycopg2-binary>=2.9.0
+
+# Optional: For Django Debug Toolbar (useful for development)
+ django-debug-toolbar>=3.2.0
+
+# Optional: For Django Channels (if you need ASGI support, WebSockets, etc.)
+ channels>=4.0.0
+
+# Optional: For Celery (if you plan to add background task processing)
+ celery>=5.2.0
+
+# Optional: For handling environment variables securely
+python-dotenv>=0.19.0
